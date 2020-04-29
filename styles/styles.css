@@ -24,3 +24,15 @@ header{
     border-radius: 2em;
     border: 3px solid black;
 }
+
+.button {
+    margin-top: 1em;
+    border-radius: .5em;
+    border: 3px solid black;
+    transition: all 1.5s ease;
+}
+
+.fun {
+    transform: scale(2.0);
+    border: 8px solid yellow;
+}
