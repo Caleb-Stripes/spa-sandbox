@@ -9,21 +9,28 @@
 </head>
 
 <nav>
-    <a href="#aboutMe" onclick="">About Me</a>
-    <a href="#myProjects" onclick="">My Projects</a>
-    <a href="#mySkills" onclick="">My Skills</a>
+    <a href="#aboutMe" class="navLink" onclick="">About Me</a>
+    <a href="#myProjects" class="navLink" onclick="">My Projects</a>
+    <a href="#mySkills" class="navLink" onclick="">My Skills</a>
 </nav>
 
+<!-- Body is rewritten by javascript when navigating about the page -->
 <body>
+    
     <header>The Lives of Caleb Stripes</header>
     
     <!-- image dom -->
+    <div id="photoBox">
     <img id="photo" src="./resources/Navigator.JPG" alt="">
     <label id="photoLabel" for="navigator">Ship's Navigator</label>
     <img id="photoBackDrop" src="./resources/Deck of the Lady.JPG" alt="">
 
     <button id="change" class="button"> Change Image </button>
-
+    </div>
+    
+    <div>
+        <p id="infoText"></p>
+    </div>
 
 </body>
 

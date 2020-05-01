@@ -7,11 +7,20 @@
     padding: 0;
 }
 
+/* Animations */
+@keyframes linkHoverAnimation{
+    from {font-size: large;
+        color: whitesmoke;}
+    to {font-size: xx-large;
+        color: gold;}
+}
+
 /* Navbar Styling */
 nav{
     position: fixed;
-    border-bottom: 8px solid blue;
-    padding: .5%;
+    background-color: black;
+    border-bottom: 8px ridge blue;
+    padding: 1.5%;
     width: 100vw;
     top: 0em;
     font-size: large;
@@ -20,13 +29,26 @@ nav{
     justify-content: space-around;
 
 }
+
+.navLink{
+    color: whitesmoke;
+}
+
+.navLink:hover{
+    color: gold;
+    font-size: xx-large;
+    animation-name: linkHoverAnimation;
+    animation-duration: 3s;
+}
+
 /* Footer Styling */
 footer{
     position: fixed;
-    border-top: 8px solid blue;
+    background-color: black;
+    border-top: 8px ridge blue;
     padding: 2.5%;
     width: 100vw;
-    bottom: 0.5em;
+    bottom: 0em;
     font-size: large;
     font-weight: 700;
     display: flex;
@@ -37,8 +59,13 @@ footer{
     color: whitesmoke;
 }
 
+
 .footerLink:hover{
-    color: yellow;
+    color: gold;
+    font-size: xx-large;
+    animation-name: linkHoverAnimation;
+    animation-duration: 3s;
+    
 }
 
 .footerLink:focus{
@@ -54,19 +81,26 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 4.5em;
+    padding-top: 3em;
     background-color: black;
+}
+
+#photoBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header{
     color: whitesmoke;
     font-size: larger;
     font-weight: bolder;
-    padding-top: .75em;
+    padding-top: 1.75em;
     padding-bottom: 1em;
 }
 
 #photo{
+    margin-top: 8.5em;
     max-width: 50vw;
     border-radius: 2em;
     border: 3px double darkgrey;
@@ -96,4 +130,11 @@ header{
 .fun {
     transform: scale(1.25);
     border: 8px solid yellow;
+}
+
+#infoText {
+    padding-top: 10em;
+    max-width: 90vw;
+    margin-bottom: 13vw;
+    color: whitesmoke;
 }
