@@ -56,7 +56,6 @@ nav{
 
 /* Footer Styling */
 footer{
-    position: fixed;
     background-color: black;
     border-top: 8px ridge blue;
     padding: 1.5%;
@@ -166,7 +165,7 @@ header{
 }
 
 .button {
-    transition: ease-in-out 2s;
+    transition: ease-in-out .5s;
     color: gold;
     background-color: green;
     font-weight: 800;
@@ -176,7 +175,7 @@ header{
 }
 
 .button:hover {
-    transition: ease-in-out 2s;
+    transition: ease-in-out .5s;
     border: 18px ridge gold;
 }
 
