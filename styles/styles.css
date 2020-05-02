@@ -98,6 +98,7 @@ body{
 }
 
 #photoBox{
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,7 +114,7 @@ header{
 
 #photo{
     margin-top: 8.5em;
-    max-width: 50vw;
+    max-width: 50%;
     border-radius: 2em;
     border: 3px double darkgrey;
     transition: ease-in-out;
@@ -121,7 +122,7 @@ header{
 
 .fadeAway {
     animation-name: imageFadeOut;
-    animation-duration: 7s;
+    animation-duration: 4s;
     opacity: 0;
 }
 
@@ -138,7 +139,7 @@ header{
 
 #photoBackDrop{
     height: auto;
-    max-width: 95vw;
+    max-width: 95%;
     border-radius: 5em;
     border: 10px solid whitesmoke;
     position: absolute;
