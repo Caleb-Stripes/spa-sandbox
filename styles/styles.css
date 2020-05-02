@@ -37,6 +37,7 @@ nav{
     font-weight: 900;
     display: flex;
     justify-content: space-around;
+    z-index: 1;
 
 }
 
@@ -63,6 +64,7 @@ footer{
     font-weight: 700;
     display: flex;
     justify-content: space-evenly;
+    z-index: 1;
 }
 
 .footerLink{
@@ -135,11 +137,12 @@ header{
 }
 
 #photoBackDrop{
+    height: auto;
     max-width: 95vw;
     border-radius: 5em;
     border: 10px solid whitesmoke;
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     opacity: .5;
 }
 
