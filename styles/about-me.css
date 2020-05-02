@@ -8,13 +8,6 @@
 }
 
 /* Animations */
-@keyframes linkHoverAnimation{
-    from {font-size: large;
-        color: whitesmoke;}
-    to {font-size: xx-large;
-        color: gold;}
-}
-
 @keyframes imageFadeOut {
     from {opacity: 10;}
     to {opacity: 0;}
@@ -23,73 +16,6 @@
 @keyframes imageFadeIn {
     from {opacity: 0;}
     to {opacity: 10;}
-}
-
-/* Navbar Styling */
-nav{
-    position: fixed;
-    background-color: black;
-    border-bottom: 8px ridge blue;
-    padding: 1.5%;
-    max-height: 6.5vh;
-    width: 100vw;
-    top: 0em;
-    font-size: large;
-    font-weight: 900;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 1;
-
-}
-
-.navLink{
-    color: whitesmoke;
-}
-
-.navLink:hover{
-    color: gold;
-    font-size: xx-large;
-    animation-name: linkHoverAnimation;
-    animation-duration: 3s;
-}
-
-/* Footer Styling */
-footer{
-    position: fixed;
-    background-color: black;
-    border-top: 8px ridge blue;
-    padding: 1.5%;
-    max-height: 6.5vh;
-    width: 100vw;
-    bottom: 0em;
-    font-size: large;
-    font-weight: 700;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 1;
-}
-
-.footerLink{
-    color: whitesmoke;
-}
-
-
-.footerLink:hover{
-    color: gold;
-    font-size: xx-large;
-    animation-name: linkHoverAnimation;
-    animation-duration: 3s;
-    
-}
-
-.footerLink:focus{
-    color: blueviolet;
-}
-
-.footerLink:active{
-    color: blue;
 }
 
 /* About Me Styling */
@@ -166,7 +92,7 @@ header{
 }
 
 .button {
-    transition: ease-in-out 2s;
+    transition: ease-in-out .5s;
     color: gold;
     background-color: green;
     font-weight: 800;
@@ -176,7 +102,7 @@ header{
 }
 
 .button:hover {
-    transition: ease-in-out 2s;
+    transition: ease-in-out .5s;
     border: 18px ridge gold;
 }
 
