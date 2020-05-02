@@ -15,6 +15,16 @@
         color: gold;}
 }
 
+@keyframes imageFadeOut {
+    from {opacity: 10;}
+    to {opacity: 0;}
+}
+
+@keyframes imageFadeIn {
+    from {opacity: 0;}
+    to {opacity: 10;}
+}
+
 /* Navbar Styling */
 nav{
     position: fixed;
@@ -104,6 +114,19 @@ header{
     max-width: 50vw;
     border-radius: 2em;
     border: 3px double darkgrey;
+    transition: ease-in-out;
+}
+
+.fadeAway {
+    animation-name: imageFadeOut;
+    animation-duration: 7s;
+    opacity: 0;
+}
+
+.fadeBack {
+    animation-name: imageFadeIn;
+    animation-duration: 4s;
+    opacity: 1;
 }
 
 #photoLabel{
