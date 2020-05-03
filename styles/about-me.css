@@ -18,6 +18,11 @@
     to {opacity: 10;}
 }
 
+@keyframes starRotation {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
 /* About Me Styling */
 body{
     display: flex;
@@ -103,11 +108,26 @@ header{
 
 .button:hover {
     transition: ease-in-out .5s;
-    border: 18px ridge gold;
+    border: 16px ridge gold;
 }
 
 .button:focus {
     outline: none;
+}
+
+.star {
+    transition: ease-out .6s;
+    max-width: 65px;
+    position: absolute;
+    opacity: 0;
+    z-index: -3;
+}
+
+.starGrow {
+    transition: ease-in .5s;
+    opacity: .6;
+    max-width: 98px;
+    animation: starRotation 10s linear infinite;
 }
 
 .fun {

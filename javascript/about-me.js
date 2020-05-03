@@ -63,5 +63,15 @@ function toggleClass() {
 
 mousedImg.addEventListener('mouseover', toggleClass);
 
+const clickBtn = document.querySelector('.button')
+const star = document.querySelector('.star')
+
+function mouseButton() {
+    star.classList.toggle('starGrow')
+}
+
+clickBtn.addEventListener('mouseover', mouseButton)
+clickBtn.addEventListener('mouseout', mouseButton)
+
 
 
