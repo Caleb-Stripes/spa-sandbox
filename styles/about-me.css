@@ -24,7 +24,7 @@
 }
 
 /* About Me Styling */
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -33,7 +33,13 @@ body{
     background-color: black;
 }
 
-header{
+#body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
     color: whitesmoke;
     font-size: larger;
     font-weight: bolder;
@@ -41,7 +47,7 @@ header{
     padding-bottom: .5em;
 }
 
-#photoBox{
+#photoBox {
     max-width: 1000px;
     display: flex;
     flex-direction: column;
@@ -49,7 +55,7 @@ header{
 }
 
 
-#photo{
+#photo {
     margin-top: 8.5em;
     max-width: 50%;
     max-height: 50%;
@@ -71,12 +77,12 @@ header{
     opacity: 1;
 }
 
-#photoLabel{
+#photoLabel {
     color: whitesmoke;
     opacity: .75;
 }
 
-#photoBackDrop{
+#photoBackDrop {
     max-width: 95%;
     max-height: 80%;
     border-radius: 5em;
