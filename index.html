@@ -4,37 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Caleb Stripes</title>
     <link rel="stylesheet" href="./styles/nav-and-footer.css">
-    <link rel="stylesheet" href="./styles/about-me.css">
+    <link id="pageCss" rel="stylesheet" href="./styles/about-me.css">
 </head>
 
 <nav>
-    <a href="#aboutMe" class="navLink" onclick="">About Me</a>
-    <a href="#myProjects" class="navLink" onclick="">My Projects</a>
-    <a href="#mySkills" class="navLink" onclick="">My Skills</a>
+    <a href="#aboutMe" id="aboutMe" class="navLink" onclick="">About Me</a>
+    <a href="#myProjects" id="myProjects" class="navLink" onclick="">My Projects</a>
+    <a href="#mySkills" id="mySkills" class="navLink" onclick="">My Skills</a>
 </nav>
 
 <!-- Body is rewritten by javascript when navigating about the page -->
 <body>
+    <section id="body">
+        <header>The Lives of Caleb Stripes</header>
     
-    <header>The Lives of Caleb Stripes</header>
-    
-    <!-- image dom -->
-    <div id="photoBox">
-        <img id="photo" class="portrait fadeBack" src="" alt="">
-        <label id="photoLabel" for=""></label>
-        <img id="photoBackDrop" src="" alt="">
-    </div>
-    
-    <div id="buttonBox">
-        <button id="change" class="button">{click}</button>
-    </div>
+        <!-- image dom -->
+        <div id="photoBox">
+            <img id="photo" class="portrait fadeBack" src="" alt="">
+            <label id="photoLabel" for=""></label>
+            <img id="photoBackDrop" src="" alt="">
+        </div>
+        
+        <div id="buttonBox">
+            <button id="change" class="button">{click}</button>
+            <img src="./resources/Star.JPG" class="star" alt="">
+        </div>
 
-    <div id="caption">
-        <p id="infoText"></p>
-    </div>
-
+        <div id="caption">
+            <p id="infoText"></p>
+        </div>
+    </section>
 </body>
 
 <footer>
@@ -44,5 +45,6 @@
     <a href="https://github.com/Caleb-Stripes" class="footerLink">GitHub</a>
 </footer>
 
-<script src="./javascript/about-me.js"></script>
+<script id="pageJs" src="./javascript/about-me.js"></script>
+<script src="./javascript/index.js"></script>
 </html>
