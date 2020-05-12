@@ -1,0 +1,34 @@
+/* default styling */
+* {
+    font-family: sans-serif;
+    line-height: 1.618em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Animations */
+
+
+/* Projects Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 3em;
+    background-color: black;
+}
+
+.content {
+    border: blue ridge 8px;
+    border-radius: .5;
+}
+
+.title {
+    color: white;
+}
+
+.description {
+    color: white;
+}

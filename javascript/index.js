@@ -1,5 +1,6 @@
 // ******** nav to about me ********
 function aboutMeClick() {
+    document.getElementById('pageCss').href = './styles/about-me.css'
     document.getElementById('body').innerHTML = ""
     
     let header = document.createElement('header')
@@ -55,10 +56,70 @@ function aboutMeClick() {
     infoText.id = 'infoText'
     infoText.innerHTML = 'Software Development has always been something I have been interested in. This journey has been unlike any other journey I have had, I am able to bring the same mentality to challenges faced but the solutions and problem solving tactics are completely new. Development is so rewarding, I find it a great outlet for my creativity and logical practice.'
     document.getElementById('caption').append(infoText)
+
+    setInital()
 }
 
 // ******** nav to my projects ********
 
 function myProjectsClick() {
+    document.getElementById('pageCss').href = './styles/projects.css'
     document.getElementById('body').innerHTML = ""
+    console.log('fired')
+
+    let panels = document.createElement('div')
+    panels.className = 'panels'
+    body.append(panels)
+
+    // ******** Panel One ********
+    let panelOne = document.createElement('div')
+    panels.append(panelOne)
+
+    let panelOneContent = document.createElement('div')
+    panelOneContent.className = 'content'
+    panelOne.append(panelOneContent)
+    let panelOneContentTitle = document.createElement('p')
+    panelOneContentTitle.className = 'title'
+    panelOneContentTitle.innerHTML = 'ProJo'
+    panelOneContent.append(panelOneContentTitle)
+    let panelOneContentDescription = document.createElement('p')
+    panelOneContentDescription.className = 'description'
+    panelOneContentDescription.innerHTML = 'An application created to allow anyone to generate, customize and print invoices. So that even contractors, self employed and temps can get paid professionally.'
+    panelOneContent.append(panelOneContentDescription)    
+
+    // ******** Panel Two ********
+    let panelTwo = document.createElement('div')
+    panels.append(panelTwo)
+
+    let panelTwoContent = document.createElement('div')
+    panelTwoContent.className = 'content'
+    panelTwo.append(panelTwoContent)
+    let panelTwoContentTitle = document.createElement('p')
+    panelTwoContentTitle.className = 'title'
+    panelTwoContentTitle.innerHTML = 'Pets Amok'
+    panelTwoContent.append(panelTwoContentTitle)
+    let panelTwoContentDescription = document.createElement('p')
+    panelTwoContentDescription.className = 'description'
+    panelTwoContentDescription.innerHTML = 'A virtual simulation of an animal shelter, complete with cyclical game loops, variable manipulation and ROBOTIC PETS!!!'
+    panelTwoContent.append(panelTwoContentDescription)
+
+    // ******** Panel Three ********
+    let panelThree = document.createElement('div')
+    panels.append(panelThree)
+
+    let panelThreeContent = document.createElement('div')
+    panelThreeContent.className = 'content'
+    panelThree.append(panelThreeContent)
+    let panelThreeContentTitle = document.createElement('p')
+    panelThreeContentTitle.className = 'title'
+    panelThreeContentTitle.innerHTML = 'Route Finder'
+    panelThreeContent.append(panelThreeContentTitle)
+
+    // ******** Panel Four ********
+    let panelFour = document.createElement('div')
+    panels.append(panelFour)
+
 }
+
+
+
