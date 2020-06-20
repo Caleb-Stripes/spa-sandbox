@@ -20,15 +20,59 @@ body {
     background-color: black;
 }
 
-.content {
+.panels {
+    height: 85vh;
+}
+
+.panel {
+    height: 34%;
     border: blue ridge 8px;
     border-radius: .5;
+    display: flex;
+    align-items: center;
+    padding: 2.5em;
 }
 
 .title {
     color: white;
+    font-family: Courier;
+    font-weight: 700;
+    font-size: x-large;
+    
 }
 
 .description {
     color: white;
+}
+
+/* Project Styling Specific to Each Id*/
+
+#panelOne {
+    background-image: url(../resources/Crick_Crossing.jpg);
+    background-size: 100%;
+    background-position-y: top;
+}
+
+#panelTwo {
+    background-image: url(../resources/Pets_Amok.JPG);
+    background-size: 100%;
+    background-position-y: 50%;
+}
+
+#panelThree {
+    background-image: url(../resources/Route_Finder.JPG);
+    background-size: 100%;
+    background-position-y: bottom;
+}
+
+/* Toggle Classes for Animations */
+
+.take-over {
+    height: 70%;
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.cut-back {
+    height: 15%;
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }

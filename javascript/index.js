@@ -73,6 +73,8 @@ function myProjectsClick() {
 
     // ******** Panel One ********
     let panelOne = document.createElement('div')
+    panelOne.id = 'panelOne'
+    panelOne.className = 'panel'
     panels.append(panelOne)
 
     let panelOneContent = document.createElement('div')
@@ -89,6 +91,8 @@ function myProjectsClick() {
 
     // ******** Panel Two ********
     let panelTwo = document.createElement('div')
+    panelTwo.id = 'panelTwo'
+    panelTwo.className = 'panel'
     panels.append(panelTwo)
 
     let panelTwoContent = document.createElement('div')
@@ -105,6 +109,8 @@ function myProjectsClick() {
 
     // ******** Panel Three ********
     let panelThree = document.createElement('div')
+    panelThree.id = 'panelThree'
+    panelThree.className = 'panel'
     panels.append(panelThree)
 
     let panelThreeContent = document.createElement('div')
@@ -114,9 +120,14 @@ function myProjectsClick() {
     panelThreeContentTitle.className = 'title'
     panelThreeContentTitle.innerHTML = 'Route Finder'
     panelThreeContent.append(panelThreeContentTitle)
+    let panelThreeContentDescription = document.createElement('p')
+    panelThreeContentDescription.className = 'description'
+    panelThreeContentDescription.innerHTML = 'A full stack piece of software used to categorize and index climbing routes by location, difficulty, user rating and name. Uses Java to establish back-end repositories with sorting and searching methods. A Spring framework with a RESTful API, to a front-end written in html, css and javascript. Invisioning a solution similar to that of Mountain Project'
+    panelThreeContent.append(panelThreeContentDescription)
 
     // ******** Panel Four ********
     let panelFour = document.createElement('div')
+    panelFour.id = 'panelFour'
     panels.append(panelFour)
 
 }
