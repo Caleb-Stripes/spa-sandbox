@@ -130,6 +130,8 @@ function myProjectsClick() {
     panelFour.id = 'panelFour'
     panels.append(panelFour)
 
+    // ******** Function to update JS ********
+    updateProjectsJs()
 }
 
 

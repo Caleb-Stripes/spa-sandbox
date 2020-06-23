@@ -84,7 +84,7 @@ header {
 
 #photoBackDrop {
     max-width: 95%;
-    max-height: 80%;
+    max-height: 75vh;
     border-radius: 5em;
     border: 10px ridge blue;
     /* position: absolute; */
