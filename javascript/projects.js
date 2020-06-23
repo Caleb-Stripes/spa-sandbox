@@ -1,31 +1,43 @@
 // Project Animation function
 
-const panelOne = document.getElementById('panelOne')
-const panelTwo = document.getElementById('panelTwo')
-const panelThree = document.getElementById('paneThree')
-
-function focus(e) {
-    
-}
-
 
 
 function updateProjectsJs() {
-    const panels = document.querySelectorAll('.panel');
+    const panelOne = document.getElementById('panelOne')
+    const panelTwo = document.getElementById('panelTwo')
+    const panelThree = document.getElementById('panelThree')
+    
+    panelOne.addEventListener('click', openOne);
+    panelTwo.addEventListener('click', openTwo);
+    panelThree.addEventListener('click', openThree);
+}
+            
+function openOne() {
+    toggleOff();
+    panelOne.classList.toggle('open')
+    panelTwo.classList.toggle('close')
+    panelThree.classList.toggle('close')
 }
 
-
-function toggleOpen() {
-  console.log('Hello');
-  this.classList.toggle('open');
+function openTwo() {
+    toggleOff();
+    panelOne.classList.toggle('close')
+    panelTwo.classList.toggle('open')
+    panelThree.classList.toggle('close')
 }
 
-function toggleActive(e) {
-  console.log(e.propertyName);
-  if (e.propertyName.includes('flex')) {
-    this.classList.toggle('open-active');
-  }
+function openThree() {
+    toggleOff();
+    panelOne.classList.toggle('close')
+    panelTwo.classList.toggle('close')
+    panelThree.classList.toggle('open')
 }
 
-panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+function toggleOff() {
+    const panels = [panelOne, panelTwo, panelThree]
+    console.log(panels)
+    panels.forEach(panel => {
+        panel.classList = 'panel';
+   });
+    
+}
