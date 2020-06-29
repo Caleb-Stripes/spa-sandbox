@@ -10,6 +10,9 @@ function updateProjectsJs() {
     panelOne.addEventListener('click', openOne);
     panelTwo.addEventListener('click', openTwo);
     panelThree.addEventListener('click', openThree);
+
+    //make a button to run the toggleOff function
+    
 }
             
 function openOne() {
