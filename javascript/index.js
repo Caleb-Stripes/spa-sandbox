@@ -65,7 +65,7 @@ function aboutMeClick() {
 function myProjectsClick() {
     document.getElementById('pageCss').href = './styles/projects.css'
     document.getElementById('body').innerHTML = ""
-    console.log('fired')
+    // console.log('fired')
 
     let panels = document.createElement('div')
     panels.className = 'panels'
@@ -134,5 +134,15 @@ function myProjectsClick() {
     updateProjectsJs()
 }
 
+// ******** nav to my skills *********
 
+function mySkillsClick() {
+    document.getElementById('pageCss').href = './styles/skills.css'
+    document.getElementById('body').innerHTML = ""
+
+    let message = document.createElement('p')
+    message.innerHTML = 'Currently Undergoing Skill Construction'
+
+    body.append(message)
+}
 

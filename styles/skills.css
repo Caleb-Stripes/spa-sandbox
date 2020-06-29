@@ -1,0 +1,25 @@
+/* default styling */
+* {
+    font-family: sans-serif;
+    line-height: 1.618em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+    background-color: black;
+    color: orange;
+    font-size: xx-large;
+    font-family: fantasy;
+    height: 95vh;
+    width: 100vw;
+}

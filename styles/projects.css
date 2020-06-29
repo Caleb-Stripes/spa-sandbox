@@ -25,37 +25,24 @@ body {
 }
 
 .panel {
-    /* height: 34%;
-    border: blue ridge 8px;
+    height: 33.6%;
+    max-width: 1000px;
     border-radius: .5;
-    display: flex;
-    align-items: center;
-    padding: 2.5em; */
-
-    background: blue;
+    /* padding: 2.5em; */
     box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
     color: white;
     text-align: center;
-    align-items: center;
-    /* Safari transitionend event.propertyName === flex */
-    /* Chrome + FF transitionend event.propertyName === flex-grow */
     transition:
       font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
       flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
       background 0.2s;
     font-size: 20px;
-    background-size: cover;
-    background-position: center;
     flex: 1;
-    justify-content: center;
     display: flex;
     flex-direction: column;
-}
+    align-items: center;
 
-.panel.open {
-    flex: 5;
-    font-size: 40px;
-  }
+}
 
 .title {
     color: rgb(228, 253, 0);
@@ -72,6 +59,7 @@ body {
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
     font-weight: 400;
     font-size: large;
+    visibility: hidden;
 }
 
 /* Project Styling Specific to Each Id*/
@@ -96,12 +84,11 @@ body {
 
 /* Toggle Classes for Animations */
 
-.take-over {
-    height: 70%;
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+.open {
+    height: 75%;
+    
 }
 
-.cut-back {
-    height: 15%;
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+.close {
+    height: 7.5%;
 }
